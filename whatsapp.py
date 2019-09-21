@@ -15,6 +15,7 @@ def textem(name,message):
     for line in message:
         textem.send_keys(line)
         textem.send_keys(Keys.RETURN)
+#######################################
 driver = webdriver.Firefox()
 driver.get("https://web.whatsapp.com/")
 check_elem = WebDriverWait(driver, 20).until(
